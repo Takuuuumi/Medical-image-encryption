@@ -1,2 +1,9 @@
 # Medical-image-encryption
-Medical image encryption hardware accelerator
+项目描述：
+基于FPGA实现的医学图像加密硬件加速器。使用CNT算法，消除浮点数运算所带来的误差，实现图像的无损加、解密。该项目最终在FPGA上通过板级验证，将所存储图像进行加密、解密后，通过HDMI接口进行图像的输出显示。
+
+文件夹DICOM_encrypt中是基于CNT算法的图像加密项目硬件代码，只接入加密部分的功能而不含有解密；
+文件夹DICOM_encrypt_jiemi中是同时接入加密和解密部分的硬件代码，可以实现加解密全流程；
+文件夹new DICOM_encrypt和new DICOM_encrypt_jiemi则是上述两个文件夹的代码的加解密换成多轮迭代以及使用移位和加减替换乘法；
+文件夹matlab里面是基于CNT算法的图像加密方案在软件上的初步实现以及相关图像加密性能的评估；
+文件夹论文写作里面是一些论文的相关内容。
